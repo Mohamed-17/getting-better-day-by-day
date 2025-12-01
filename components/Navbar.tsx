@@ -8,7 +8,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-10 py-5 grid items-center grid-cols-2">
         <div className="relative">
           <Image
-            src={"/MO.svg"}
+            src={"/mo.svg"}
             alt="logo"
             width={100}
             height={100}
