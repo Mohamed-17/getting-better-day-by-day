@@ -1,7 +1,6 @@
 import React from "react";
 import Menu from "./Menu";
 import Image from "next/image";
-import Logo from "@/public/mo.svg";
 
 function Navbar() {
   return (
@@ -9,7 +8,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-10 py-5 grid items-center grid-cols-2">
         <div className="relative">
           <Image
-            src={Logo}
+            src={"/mo.svg"}
             alt="logo"
             width={100}
             height={100}
