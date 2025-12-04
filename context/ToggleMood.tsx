@@ -19,9 +19,7 @@ const ToggleMood = ({ children }: { children: React.ReactNode }) => {
         setterMood,
       }}
     >
-      <main className={`${Boolean(toggleMood) ? "bg-sky-950" : "bg-white"} `}>
-        {children}
-      </main>
+      <main>{children}</main>
     </ToggleContext.Provider>
   );
 };

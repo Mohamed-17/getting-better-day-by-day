@@ -14,7 +14,7 @@ async function Projects({
         <h1 className="text-2xl font-semibold">
           Using in This section{" "}
           <span className="text-blue-500">
-            (Prisma + MongoDB + Server Actions + cache component )
+            (Prisma + MongoDB + cache component + Partial Prerendering (PPR) )
           </span>
         </h1>
         <SelectCategory />

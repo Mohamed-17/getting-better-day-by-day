@@ -6,9 +6,9 @@ import React from "react";
 
 function ContainerLayout({ children }: { children: React.ReactNode }) {
   const { toggleMood } = useToggleMood();
-
+  
   return (
-    <div className={`${toggleMood ? "dark" : "light"} overflow-hidden`}>
+    <div className={`${toggleMood ? "dark" : "light"}`}>
       <Navbar />
       <div className="max-w-7xl mx-auto">{children}</div>
     </div>

@@ -1,5 +1,3 @@
-import { ArrowUpRightIcon } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { signIn } from "@/auth";
