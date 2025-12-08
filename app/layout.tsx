@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import ContainerLayout from "@/components/ContainerLayout";
-import ToggleMood from "@/context/ToggleMood";
 import ToggleCategory from "@/context/ToggleCategory";
-
+import dynamic from "next/dynamic";
 export const metadata: Metadata = {
   title: "Mo Is Getting Better",
   description: "Mo Is Getting Better  Every Day ",
 };
+const ToggleMood = dynamic(() => import("@/context/ToggleMood"));
 const josefinSans = Josefin_Sans({
   subsets: ["latin", "latin-ext", "vietnamese"],
   weight: ["400", "500", "600", "700"],
@@ -21,8 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="shortcut icon" href="/favicon.ico" />
         <title>Mo Is Getting Better</title>
         <meta
           name="description"

@@ -7,7 +7,6 @@ import { auth } from "@/auth";
 export async function UserForm() {
   const user = await auth();
   const userName = user?.user?.name?.split(" ")[0];
-  console.log(user);
   return (
     <div className="flex flex-col items-start gap-8 sm:flex-row text-black">
       <div className="flex items-start gap-2">

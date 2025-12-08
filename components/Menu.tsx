@@ -3,7 +3,7 @@ import { AnimatePresence } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { useToggleMood } from "@/context/ToggleMood";
-import { ArrowBigLeft, ArrowLeft, Moon, Sun } from "lucide-react";
+import { ArrowLeft, Moon, Sun } from "lucide-react";
 function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { setterMood, toggleMood } = useToggleMood();

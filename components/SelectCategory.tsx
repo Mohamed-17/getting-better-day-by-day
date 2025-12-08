@@ -1,6 +1,6 @@
 "use client";
 import { useToggleMood } from "@/context/ToggleMood";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import {
   Select,
   SelectContent,
