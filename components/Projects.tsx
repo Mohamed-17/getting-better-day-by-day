@@ -13,6 +13,7 @@ async function Projects({
 
   return (
     <section className=" min-h-[770px]">
+      
       <ProjectList projects={projects} />
     </section>
   );

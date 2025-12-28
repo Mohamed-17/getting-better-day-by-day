@@ -21,3 +21,12 @@ model Project {
   updatedAt DateTime @updatedAt
 }
 
+model Book {
+id String @id @default(cuid()) @map("_id")
+title String
+author String
+image String
+status String
+createdAt DateTime @default(now())
+updatedAt DateTime @updatedAt
+}

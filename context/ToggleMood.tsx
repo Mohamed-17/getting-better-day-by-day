@@ -7,7 +7,7 @@ const ToggleContext = createContext<{
 } | null>(null);
 
 const ToggleMood = ({ children }: { children: React.ReactNode }) => {
-  const [toggleMood, setToggleMood] = useState<boolean>(false);
+  const [toggleMood, setToggleMood] = useState<boolean>(true);
 
   const setterMood = () => {
     setToggleMood(!toggleMood);

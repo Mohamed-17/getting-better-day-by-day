@@ -6,7 +6,7 @@ import React from "react";
 
 function ContainerLayout({ children }: { children: React.ReactNode }) {
   const { toggleMood } = useToggleMood();
-  
+
   return (
     <div className={`${toggleMood ? "dark" : "light"}`}>
       <Navbar />
