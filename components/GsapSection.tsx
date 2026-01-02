@@ -2,11 +2,11 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { BBH_Sans_Bartle } from "next/font/google";
 import SplitText from "gsap/SplitText";
+import { BBH_Bartle } from "next/font/google";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(SplitText);
-const bbhSansBartle = BBH_Sans_Bartle({
+const bbhBartle = BBH_Bartle({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -60,7 +60,7 @@ function GsapSection() {
             <h2
               id="textEffect-1"
               className="uppercase  text-[30px] gsapText1"
-              style={{ fontFamily: bbhSansBartle.style.fontFamily }}
+              style={{ fontFamily: bbhBartle.style.fontFamily }}
             >
               Welcome to gsap section
             </h2>
@@ -71,7 +71,7 @@ function GsapSection() {
             <h2
               id="textEffect-2"
               className="uppercase gsapText2 text-blue-400 blur-[1px] text-[30px]"
-              style={{ fontFamily: bbhSansBartle.style.fontFamily }}
+              style={{ fontFamily: bbhBartle.style.fontFamily }}
             >
               Welcome to gsap section
             </h2>

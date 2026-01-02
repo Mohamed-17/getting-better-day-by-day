@@ -4,8 +4,8 @@ import React from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
-import { BBH_Sans_Bartle } from "next/font/google";
-const bbhSansBartle = BBH_Sans_Bartle({
+import { BBH_Bartle } from "next/font/google";
+const bbhBartle = BBH_Bartle({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -117,7 +117,7 @@ function HeroGsap() {
           <div
             id="heroScroll"
             className="z-100 relative  text-2xl font-bold leading-17 tracking-[50px]"
-            style={{ fontFamily: bbhSansBartle.style.fontFamily }}
+            style={{ fontFamily: bbhBartle.style.fontFamily }}
           >
             GSAP
           </div>
