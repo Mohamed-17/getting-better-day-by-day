@@ -4,7 +4,6 @@ import Projects from "@/components/Projects";
 import SelectCategory from "@/components/SelectCategory";
 import { SkeletonCard } from "@/components/Skelton";
 import React, { Suspense } from "react";
-
 import Books from "@/components/Books";
 import GsapSection from "@/components/GsapSection";
 
@@ -16,7 +15,7 @@ async function HomePage({ searchParams }: Props) {
   "use memo";
 
   return (
-    <main className="py-20">
+    <main className="pt-20 pb-5">
       <Hero />
       <section className="mt-20 space-y-10">
         <div className="flex justify-between items-center ">
