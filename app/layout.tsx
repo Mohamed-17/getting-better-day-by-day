@@ -4,7 +4,6 @@ import "./globals.css";
 import ContainerLayout from "@/components/ContainerLayout";
 import ToggleCategory from "@/context/ToggleCategory";
 import dynamic from "next/dynamic";
-import HeroGsap from "@/components/HeroGsap";
 export const metadata: Metadata = {
   title: "Mo Is Getting Better",
   description: "Mo Is Getting Better  Every Day ",
@@ -40,7 +39,6 @@ export default function RootLayout({
               <main className="px-10">{children}</main>
             </ToggleCategory>
           </ContainerLayout>
-          <HeroGsap />
         </ToggleMood>
       </body>
     </html>

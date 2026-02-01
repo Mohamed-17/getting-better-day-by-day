@@ -5,7 +5,6 @@ import SelectCategory from "@/components/SelectCategory";
 import { SkeletonCard } from "@/components/Skelton";
 import React, { Suspense } from "react";
 import Books from "@/components/Books";
-import GsapSection from "@/components/GsapSection";
 
 type Props = {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
@@ -39,7 +38,6 @@ async function HomePage({ searchParams }: Props) {
       <Suspense fallback={<SkeletonCard />}>
         <Books />
       </Suspense>
-      <GsapSection />
     </main>
   );
 }
